@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: yomidako-db
+    environment:
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: yomi2026dako
+      POSTGRES_DB: yomidako-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - .docker/db/init:/docker-entrypoint-initdb.d
+    networks:
+      - yomidako-network
+
+volumes:
+  postgres_data:
+
+networks:
+  yomidako-network:
