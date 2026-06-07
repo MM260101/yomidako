@@ -9,9 +9,7 @@
 ## 関連Issue
 <!-- 関連するIssueとの関連付け -->
 <!-- #の後にIssueの番号を入力 -->
-- closes #
+- close #
 
-<details>
-<summary>詳細</summary>
+## 詳細
 <!-- 変更の詳細・背景やエラー文などを書く -->
-</details>
